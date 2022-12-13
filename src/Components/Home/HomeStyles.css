@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+}
+
+p {
+    color: #808080;
+    line-height: 1.5;
+}
+
+/* Headings */
+
+.big-headings {
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.section-heading h5 {
+    margin: 0;
+    font-size: 16px;
+    color: #c6414c;
+}
+
+.section-heading div {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.section-heading h1 {
+    margin: 0;
+    line-height: 7vh;
+    color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-heading div {
+        flex-direction: column;
+    }
+}
+
+/* Sections */
+
+.colored-section {
+    background-color: #c6414c;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+.black-section {
+    background-color: #000;
+}
+
+
+/* ******************************************* */
+/* Title Section */
+/* ******************************************* */
+
+#title {
+    padding: 4% 10%;
+    margin-top: 10vh;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-image {
+    border-radius: 5px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    #title {
+        margin-top: 10vh;
+    }
+
+    .landing {
+        padding: 10%;
+    }
+}
+
+
+/* ******************************************* */
+/* Hadith Section */
+/* ******************************************* */
+
+.hadith {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+
+.hadith h1 {
+    font-family: "Noto Naskh Arabic", serif;
+    color: #fff;
+    margin: 1% 0;
+}
+
+.hadith h3 {
+    color: #000;
+    line-height: 1.5;
+}
+
+.hadith h5 {
+    color: #fff;
+    margin: 1% 0;
+}
+
+
+#aboutus {
+    margin: 0;
+    padding: 10% 10% 5%;
+}
+
+#aboutus .row {
+    margin-top: 5%;
+}
+
+/* Corousal */
+
+.carousel {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.hierarchy-box {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: #c6414c;
+    border-radius: 5px;
+}
+
+.hierarchy {
+    display: flex;
+    text-align: left;
+}
+
+.hierarchy-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+    width: 100%;
+    color: white;
+}
+
+.hierarchy-details p {
+    color: white;
+}
+
+.hierarchy-img img {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    padding: 0.1rem;
+    background-color: white;
+}
+
+.hierarchy-description p {
+    margin: 5% 0 0 0;
+    color: white;
+    line-height: 1.5;
+}
+
+.tick {
+    padding: 0;
+    list-style: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.tick li {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+.tick i {
+    margin: 0 1rem 1rem 0;
+    color: #c6414c;
+}
+
+@media only screen and (max-width: 1200px) {
+    .tick {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+    }
+}
+
+.carousel_person_name {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.carousel_person_detail {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+
+}
+
+#services {
+    padding-top: 5%;
+    background-color: white;
+}
+
+.row-heading {
+    margin-bottom: 5%;
+    padding: 2.5%;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .row-heading {
+        margin-bottom: 10%;
+    }
+}
+
+.row-container {
+    margin: 0;
+    padding: 0 10% 10%;
+    background-color: #c6414c;
+}
+
+.column {
+    text-align: center;
+    border-radius: 5px;
+    transition: ease-out 0.5s;
+}
+
+.column:hover {
+    margin-top: -1%;
+}
+
+.card {
+    padding: 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.action-img img {
+    height: 10vh;
+    width: 10vh;
+}
+
+.action-txt {
+    margin-top: 5%;
+}
+
+.action-txt p {
+    margin: 5% 0;
+    text-align: center;
+}
+
+.read-more {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    color: #c6414c;
+}
+
+.read-more:hover {
+    color: darkred;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .column {
+        margin: 5% auto;
+        padding: 5%;
+    }
+}
+
+
+/* ******************************************* */
+/* Achievement Section */
+/* ******************************************* */
+#achievement {
+    margin: 0 auto;
+    overflow: auto;
+    background-color: black;
+    color: white;
+    padding: 10%;
+}
+
+.achievements {
+    margin: 0 auto 5% auto;
+    text-align: center;
+}
+
+.achievements h5 {
+    font-size: 16px;
+    color: #c6414c;
+}
+
+.achievements h1 {
+    margin: 1% 0;
+}
+
+.achievements p {
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.counters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+}
+
+.counters p {
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.icon {
+    color: #c6414c;
+    margin-bottom: 10px;
+    font-size: 3.5rem;
+}
+
+.icon:hover {
+    color: white;
+}
+
+.counter-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.counter {
+    font-size: 45px;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.plus {
+    text-align: left;
+    margin: 10px 0;
+    padding: 20px 0 0 10px;
+}
+
+.plus i {
+    color: #c6414c;
+}
+
+@media only screen and (max-width: 768px) {
+    .achievements {
+        margin: 0 auto 10% auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .counters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counters>div:nth-of-type(1),
+    .counters>div:nth-of-type(2) {
+        border-bottom: 2px solid white;
+        padding-bottom: 10%;
+    }
+}
+
+/* 
+
+/* ******************************************* */
+/* Achievement Section */
+/* ******************************************* */
+#achievement {
+    margin: 0 auto;
+    overflow: auto;
+    background-color: black;
+    color: white;
+    padding: 10%;
+}
+
+.achievements {
+    margin: 0 auto 5% auto;
+    text-align: center;
+}
+
+.achievements h5 {
+    font-size: 16px;
+    color: #c6414c;
+}
+
+.achievements h1 {
+    margin: 1% 0;
+}
+
+.achievements p {
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.counters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+}
+
+.counters p {
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.icon {
+    color: #c6414c;
+    margin-bottom: 10px;
+    font-size: 3.5rem;
+}
+
+.icon:hover {
+    color: white;
+}
+
+.counter-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.counter {
+    font-size: 45px;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.plus {
+    text-align: left;
+    margin: 10px 0;
+    padding: 20px 0 0 10px;
+}
+
+.plus i {
+    color: #c6414c;
+}
+
+@media only screen and (max-width: 768px) {
+    .achievements {
+        margin: 0 auto 10% auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .counters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counters>div:nth-of-type(1),
+    .counters>div:nth-of-type(2) {
+        border-bottom: 2px solid white;
+        padding-bottom: 10%;
+    }
+}
+
+
+/* ******************************************* */
+/* fourth-container */
+/* ******************************************* */
+#events {
+    margin: 0;
+    padding: 10%;
+}
+
+#events .row-container {
+    margin-top: 5%;
+    padding: 0;
+    background-color: white;
+}
+
+#events .card {
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.event-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.event-img img {
+    width: 100%;
+    height: 40vh;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.event-description {
+    display: flex;
+}
+
+.event-date {
+    background-color: #c6414c;
+    height: 6vh;
+    width: 50%;
+    border-bottom-left-radius: 5px;
+}
+
+.event-date i {
+    line-height: 6vh;
+    color: white;
+    text-align: center;
+}
+
+.event-location {
+    background-color: darkred;
+    height: 6vh;
+    width: 50%;
+    border-bottom-right-radius: 5px;
+}
+
+.event-location i {
+    line-height: 6vh;
+    color: white;
+    text-align: center;
+}
+
+.event-txt {
+    margin: 5% 0 0 0;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.event-txt h2 {
+    margin: 1% 0;
+}
+
+.event-txt p {
+    margin: 1% 0;
+    padding: 0 20px;
+    color: gray;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    #events .row-container {
+        margin-top: 0;
+    }
+
+    #events .card {
+        margin-top: 10%;
+    }
+}
+
+
+
+/* ******************************************* */
+/* Join Us Section*/
+/* ******************************************* */
+#joinus {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(../../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.society {
+    color: white;
+    width: 100%;
+    padding: 10%;
+}
+
+.society h5 {
+    margin-bottom: 1%;
+    font-size: 16px;
+}
+
+.society p {
+    margin: 1% auto;
+    line-height: 1.5;
+    padding: 0 25%;
+    color: white;
+}
+
+#joinus button {
+    background-color: white;
+    border: none;
+    color: #c6414c;
+    height: 7vh;
+    width: 150px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+#joinus button:hover {
+    background-color: #c6414c;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .society p {
+        padding: 0;
+        margin: 5% auto;
+    }
+}

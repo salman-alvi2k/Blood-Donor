@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    z-index: 10;
+    height: 10vh;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    height: 7vh;
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 7vh;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-left: 10px;
+}
+
+.logo img {
+    height: 7vh;
+}
+
+.menu {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+
+}
+
+.navigation-menu {
+    margin-left: auto;
+    display: flex;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.navigation-menu ul {
+    padding: 0;
+}
+
+.item {
+    list-style-type: none;
+    margin: 0 1rem;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+
+.item a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    color: gray;
+}
+
+.item a:hover {
+    color: darkred;
+}
+
+.hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #c6414c;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.hamburger:hover {
+    background-color: darkred;
+}
+
+.button {
+    background-color: #c6414c;
+    border: none;
+    color: white;
+    height: 7vh;
+    width: auto;
+    padding: 0 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+.button:hover {
+    background-color: darkred;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 790px) {
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        margin-top: 0px;
+    }
+
+    .navigation-menu ul {
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+        margin-right: 10px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: white;
+        border-top: 1px solid black;
+        display: none;
+    }
+
+    .item {
+        text-align: center;
+        margin: 0;
+        text-decoration: underline;
+    }
+
+    .navigation-menu li a {
+        color: black;
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    .item {
+        color: black;
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    .item:hover {
+        background-color: #eee;
+    }
+
+    .navigation-menu.expanded ul {
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 345px) {
+
+    .hamburger {
+        right: 5px;
+    }
+
+}

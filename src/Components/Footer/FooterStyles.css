@@ -1,0 +1,137 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 10% 10px 10%;
+    background-color: #f5f5f5;
+    background: url(../../images/footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.u-footer {
+    display: flex;
+    width: 100%;
+}
+
+.l-footer {
+    width: 25%;
+    padding-right: 5%;
+}
+
+.l-footer div {
+    justify-content: left;
+    align-items: center;
+    display: flex;
+}
+
+.l-footer div img {
+    height: 6vh;
+}
+
+.l-footer p {
+    color: gray;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+.social {
+    width: 100%;
+}
+
+.social a {
+    text-decoration: none;
+    background-color: #c6414c;
+    color: white;
+    transition: 0.5s;
+    height: 6vh;
+    width: 6vh;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.social a:hover {
+    background-color: darkred;
+}
+
+.social a i {
+    font-size: 4vh;
+    color: white;
+}
+
+.r-footer {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.features {
+    width: 30%;
+    margin: 0 5%;
+}
+
+#footer h3 {
+    color: black;
+    border-bottom: 2px solid #c6414c;
+    display: inline-block;
+    height: 6vh;
+}
+
+#footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.box {
+    margin: 20px auto;
+}
+
+.box li {
+    margin: 20px auto;
+}
+
+.box li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.box a:hover {
+    color: #c6414c;
+}
+
+.b-footer {
+    text-align: center;
+    color: gray;
+    padding-top: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .u-footer {
+        flex-direction: column;
+    }
+
+    .l-footer {
+        width: 100%;
+        padding-right: 0%;
+        margin-bottom: 50px;
+    }
+
+    .l-footer div {
+        width: 100%;
+    }
+
+    .r-footer {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .features {
+        width: 100%;
+        margin: 0;
+    }
+}
